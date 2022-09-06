@@ -1,8 +1,6 @@
 ﻿// Copyright (c) Jon Thysell <http://jonthysell.com>
 // Licensed under the MIT License.
 
-// Adapted from MusicBee API sample https://getmusicbee.com/help/api/
-
 using System;
 
 using AnyAscii;

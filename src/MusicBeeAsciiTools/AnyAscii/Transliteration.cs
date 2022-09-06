@@ -1,6 +1,9 @@
-﻿// Adapted from AnyAscii's C# implementations at:
-// https://raw.githubusercontent.com/anyascii/anyascii/0.3.1/impl/csharp/src/Transliteration.cs
-// https://github.com/anyascii/anyascii/blob/0.2.0/csharp/src/Transliteration.cs
+﻿// Copyright (c) 2020-2022, Hunter WB <hunterwb.com>
+// Licensed under the ISC License.
+
+// Adapted from AnyAscii's C# implementation.
+// Original at https://github.com/anyascii/anyascii/blob/0.3.1/impl/csharp/src/Transliteration.cs
+//         and https://github.com/anyascii/anyascii/blob/0.2.0/csharp/src/Transliteration.cs
 
 using System.Text;
 

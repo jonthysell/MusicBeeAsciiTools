@@ -1,4 +1,7 @@
-﻿// Adapted from MusicBee API sample https://getmusicbee.com/help/api/
+﻿// Copyright (c) 2008-2022, Steven Mayall
+
+// Adapted from MusicBee API sample.
+// Original at https://getmusicbee.com/help/api/
 
 using System;
 using System.Runtime.InteropServices;
@@ -57,21 +60,37 @@ namespace MusicBeePlugin
                 get
                 {
                     if (ApiRevision <= 25)
+                    {
                         return MusicBeeVersion.v2_0;
+                    }
                     else if (ApiRevision <= 31)
+                    {
                         return MusicBeeVersion.v2_1;
+                    }
                     else if (ApiRevision <= 33)
+                    {
                         return MusicBeeVersion.v2_2;
+                    }
                     else if (ApiRevision <= 38)
+                    {
                         return MusicBeeVersion.v2_3;
+                    }
                     else if (ApiRevision <= 43)
+                    {
                         return MusicBeeVersion.v2_4;
+                    }
                     else if (ApiRevision <= 47)
+                    {
                         return MusicBeeVersion.v2_5;
+                    }
                     else if (ApiRevision <= 48)
+                    {
                         return MusicBeeVersion.v3_0;
+                    }
                     else
+                    {
                         return MusicBeeVersion.v3_1;
+                    }
                 }
             }
 

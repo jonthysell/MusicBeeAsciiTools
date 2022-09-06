@@ -1,4 +1,8 @@
-﻿// Adapted from AnyAscii's https://raw.githubusercontent.com/anyascii/anyascii/0.3.1/impl/csharp/src/Transliteration.data.cs
+﻿// Copyright (c) 2020-2022, Hunter WB <hunterwb.com>
+// Licensed under the ISC License.
+
+// Adapted from AnyAscii's C# implementation.
+// Original at https://github.com/anyascii/anyascii/blob/0.3.1/impl/csharp/src/Transliteration.data.cs
 
 namespace AnyAscii
 {
