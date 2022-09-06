@@ -8,7 +8,7 @@
     <ProjectGuid>{AB05FE39-14C4-4372-AD73-C80DD42D01AB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MusicBeePlugin</RootNamespace>
+    <RootNamespace>MusicBeeAsciiTools</RootNamespace>
     <AssemblyName>mb_AsciiTools</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -85,11 +85,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="External\ArrayBufferWriter.ArrayPool.cs" />
     <Compile Include="MusicBeeInterface.cs" />
-    <Compile Include="AsciiTools.cs" />
-    <Compile Include="External\AnyAscii\Transliteration.cs" />
-    <Compile Include="External\AnyAscii\Transliteration.data.cs" />
+    <Compile Include="Plugin.cs" />
+    <Compile Include="AnyAscii\Transliteration.cs" />
+    <Compile Include="AnyAscii\Transliteration.data.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -113,17 +112,6 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Shim.System.Text.Rune">
-      <Version>6.0.2</Version>
-    </PackageReference>
-    <PackageReference Include="System.Buffers">
-      <Version>4.5.1</Version>
-    </PackageReference>
-    <PackageReference Include="System.Memory">
-      <Version>4.5.5</Version>
-    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

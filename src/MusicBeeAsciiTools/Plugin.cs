@@ -5,7 +5,7 @@
 
 using System;
 
-using MusicBeePlugin.External.AnyAscii;
+using AnyAscii;
 
 namespace MusicBeePlugin
 {

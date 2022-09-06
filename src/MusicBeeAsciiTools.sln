@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicBeeAsciiTools", "MusicBeeAsciiTools\MusicBeeAsciiTools.csproj", "{AB05FE39-14C4-4372-AD73-C80DD42D01AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicBeeAsciiTools.Test", "MusicBeeAsciiTools.Test\MusicBeeAsciiTools.Test.csproj", "{62D13FC9-E649-4EFE-A9B2-AF6528E8BFD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,14 @@ Global
 		{AB05FE39-14C4-4372-AD73-C80DD42D01AB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AB05FE39-14C4-4372-AD73-C80DD42D01AB}.Release|x86.ActiveCfg = Release|x86
 		{AB05FE39-14C4-4372-AD73-C80DD42D01AB}.Release|x86.Build.0 = Release|x86
+		{62D13FC9-E649-4EFE-A9B2-AF6528E8BFD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D13FC9-E649-4EFE-A9B2-AF6528E8BFD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D13FC9-E649-4EFE-A9B2-AF6528E8BFD6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{62D13FC9-E649-4EFE-A9B2-AF6528E8BFD6}.Debug|x86.Build.0 = Debug|Any CPU
+		{62D13FC9-E649-4EFE-A9B2-AF6528E8BFD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D13FC9-E649-4EFE-A9B2-AF6528E8BFD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62D13FC9-E649-4EFE-A9B2-AF6528E8BFD6}.Release|x86.ActiveCfg = Release|Any CPU
+		{62D13FC9-E649-4EFE-A9B2-AF6528E8BFD6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
