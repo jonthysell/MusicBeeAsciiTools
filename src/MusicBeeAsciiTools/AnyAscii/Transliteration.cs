@@ -23,7 +23,7 @@ namespace AnyAscii
             return sb.ToString();
         }
 
-        public static void Transliterate(this string s, StringBuilder dst)
+        internal static void Transliterate(this string s, StringBuilder dst)
         {
             for (int i = 0; i < s.Length; i++)
             {
@@ -33,19 +33,7 @@ namespace AnyAscii
             }
         }
 
-        public static void Transliterate(int utf32, StringBuilder dst)
-        {
-            if (IsAscii(utf32))
-            {
-                dst.Append((char)utf32);
-            }
-            else
-            {
-                dst.Append(Transliterate(utf32));
-            }
-        }
-
-        public static string Transliterate(int utf32)
+        internal static string Transliterate(int utf32)
         {
             uint blockNum = (uint)utf32 >> 8;
             var block = Block(blockNum);
@@ -62,6 +50,18 @@ namespace AnyAscii
             {
                 int i = (block[lo] << 8) | block[lo + 1];
                 return Encoding.ASCII.GetString(Bank, i, len);
+            }
+        }
+
+        internal static void Transliterate(int utf32, StringBuilder dst)
+        {
+            if (IsAscii(utf32))
+            {
+                dst.Append((char)utf32);
+            }
+            else
+            {
+                dst.Append(Transliterate(utf32));
             }
         }
 
@@ -82,7 +82,7 @@ namespace AnyAscii
             return (c >> 7) == 0;
         }
 
-        public static bool IsAscii(int utf32)
+        internal static bool IsAscii(int utf32)
         {
             return (utf32 >> 7) == 0;
         }
